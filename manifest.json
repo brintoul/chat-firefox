@@ -15,5 +15,11 @@
     "default_panel": "popup.html",
     "default_icon": "icon.png",
     "browser_style": false
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.chatgpt.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
 }
